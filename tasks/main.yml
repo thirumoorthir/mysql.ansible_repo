@@ -1,2 +1,8 @@
 ---
 # tasks file for geekyops.mysql
+
+ - name: install mysql on CentOS/RHEL/Debian System
+   become: true
+   hosts: all
+   roles:
+    - {role: geerlingguy.mysql}
